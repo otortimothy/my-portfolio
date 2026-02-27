@@ -45,12 +45,12 @@ export function Hero() {
             </Link>
           </Button>
           
-          <Button size="lg" variant="outline" className="w-full sm:w-auto text-base h-12 border-white/10 hover:bg-white/5" asChild>
+          {/* <Button size="lg" variant="outline" className="w-full sm:w-auto text-base h-12 border-white/10 hover:bg-white/5" asChild>
             <Link href="Download Otor Timothy CV" target="_blank">
                Download CV
                <Download className="ml-2 w-4 h-4" />
             </Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
       
