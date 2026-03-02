@@ -7,39 +7,48 @@ import { Section } from "@/components/layout/section"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { motion } from "framer-motion"
+// import Baiy from "public/Images/Baiy.png"
+// import Afritech from "public/Images/Afritech.png"
+// import DesignSystem from "public/Images/DesignSystem.png" 
 
 const projects = [
   {
-    title: "Enterprise Dashboard System",
+    title: "Baiy Dashboard System",
     description: "The Trusted B2B Platform for Medical Equipment Procurement in Africa.",
-    tags: ["Next.js", "TypeScript", "TailwindCSS"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop", 
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "React Query"],
+    image: "/Images/Baiy.png",
     demo: "#",
     repo: "#",
     challenge: "Scarsity of big medical equipment and means to get them",
     solution: "By connecting healthcare providers directly with manufacturers and distributors, we eliminate intermediaries, reduce costs, and ensure timely access to essential medical equipment."
   },
   {
-    title: "EdTech Platform for Schools",
-    description: "Modern learning management system that bridges the gap in Africa's education system by providing innovative, accessible, and impactful tech solutions.",
+    title: "AfriLearn Platform for Schools",
+    description: "Modern learning management system that bridges the gap in Africa's education system by providing innovative, accessible, and impactful tech solutions to african schools.",
     tags: ["React", "Next.js", "TailwindCSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop",
+    image: "/Images/Afritech.png",
+    link: "https://www.afritech-dh.com/",
     demo: "#",
     repo: "#",
     challenge: "Low-knowledge of students on tech skills and lack of access to quality education.",
     solution: "By equipping students, educators, and institutions with the skills, tools, and resources needed to thrive in the digital age."
   },
   {
-    title: "E-Commerce Design System",
-    description: "A standalone component library used across 5+ diverse e-commerce storefronts to ensure brand consistency and accessibility.",
-    tags: ["Storybook", "Radix UI", "TailwindCSS", "NPM Package"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    title: "Mykel IT Solution",
+    description: "we are an innovative and dynamic software development company dedicated to delivering cutting-edge technology solutions that empower businesses to thrive in the digital age. With a team of passionate developers, designers, and strategists, we specialize in creating the unique needs of our clients.",
+    tags: ["React", "Next.js", "TailwindCSS", "JavaScript"],
+    image: "/Images/Mykel.png",
     demo: "#",
     repo: "#",
-    challenge: "Maintaining consistent theming across different brands.",
-    solution: "Built a token-based theming engine using CSS variables."
+    challenge: "The need for high-quality, scalable software solutions that can adapt to the rapidly evolving technology landscape.",
+    solution: "At Mykel IT Solution, we are committed to excellence, innovation, and customer satisfaction."
   }
 ]
+
+//  Our commitment to excellence, innovation, and customer satisfaction drives us to deliver high-quality 
+//  solutions that not only meet but exceed expectations. Whether you are a startup looking to bring your
+//   vision to life or an established enterprise seeking to enhance your digital presence, 
+//   Mykel IT Solution is your trusted partner for all your software development needs
 
 export function Projects() {
   return (
@@ -59,7 +68,7 @@ export function Projects() {
           </Button>
         </div>
 
-        <div className="grid gap-12">
+        <div className="grid gap-18">
           {projects.map((project, index) => (
              <motion.div
                key={index}
@@ -103,6 +112,14 @@ export function Projects() {
                         <span className="block font-semibold text-primary mb-1">The Solution</span>
                         <span className="text-muted-foreground">{project.solution}</span>
                       </div>
+                   </div>
+
+                   <div>
+                    {project.link && (
+                      <Link href={project.link} target="_blank" className="text-primary hover:underline">
+                        View Project <ExternalLink className="ml-2 h-4 w-4 inline"/>
+                      </Link>
+                    )}
                    </div>
 
                    <div className="flex flex-wrap gap-2">

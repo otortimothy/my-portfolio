@@ -20,7 +20,7 @@ export function Contact() {
          
          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
            <Button size="lg" variant="premium" className="w-full sm:w-auto text-base h-12 gap-2" asChild>
-             <Link href="mailto:[otortimothy7@gmail.com]">
+             <Link href="https://wa.me/2349161743866" target="_blank">
                <Mail className="w-5 h-5"/>
                Start a Conversation
              </Link>
