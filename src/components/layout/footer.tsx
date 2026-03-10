@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Github, Linkedin, Mail, MessageCircle } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 
 export function Footer() {
   return (
@@ -15,19 +16,19 @@ export function Footer() {
         </div>
 
         <div className="flex items-center gap-6">
-          <Link href="https://github.com" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://github.com/otortimothy" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="https://twitter.com" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
-            <MessageCircle className="h-5 w-5" />
+          <Link href="https://wa.me/2349161743866" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+            <FaWhatsapp className="h-5 w-5" />
             <span className="sr-only">Whatsapp</span>
           </Link>
-          <Link href="https://linkedin.com" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://linkedin.com/in/timothyotor" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>
-          <Link href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="mailto:otortimothy7@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
             <Mail className="h-5 w-5" />
             <span className="sr-only">Email</span>
           </Link>
